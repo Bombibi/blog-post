@@ -1,0 +1,17 @@
+<%- include("partials/header.ejs") %>
+<div class="index-component">
+  <h1>Blog Post</h1>
+  <a class="compose" href="/compose">New Article</a>
+
+  <% if(locals.articles){ %> <% articles.forEach(article => { %>
+  <div class="post">
+    <h2><%= article.title %></h2>
+    <h4><%= article.createdAt.toLocaleDateString() %></h4>
+    <h3><%= article.description %></h3>
+    <div>
+      <a class="edit" href="/edit/<%= article.id %>">Edit</a>
+      <a class="delete" href="/delete/<%= article.id %>">Delete</a>
+    </div>
+  </div>
+</div>
+<div class="footer"><% }) %> <% } %> <%- include("partials/footer.ejs") %></div>

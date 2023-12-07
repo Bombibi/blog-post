@@ -1,0 +1,129 @@
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* VARIABLES */
+:root {
+  --light-blue: #9bb8cd;
+  --light-yellow: #fff7d4;
+  --yellow: #eec759;
+  --green: #b1c381;
+  --white: white;
+}
+
+@font-face {
+  font-family: "roboto-regular";
+  src: url("./Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: "roboto-bold";
+  src: url("./Roboto/Roboto-Bold.ttf");
+}
+
+@font-face {
+  font-family: "roboto-light";
+  src: url("./Roboto/Roboto-Light.ttf");
+}
+
+/* COMPONENTS */
+
+body {
+  background-color: var(--light-yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+nav {
+  background-color: var(--light-blue);
+  width: 100%;
+  height: 80px;
+  text-align: center;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "roboto-bold";
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  left: 0;
+  background-color: var(--light-blue);
+  font-family: "roboto-light";
+}
+
+.compose {
+  color: var(--green);
+  padding-bottom: 2rem;
+  font-family: "roboto-bold";
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.post div {
+  display: flex;
+  gap: 1rem;
+  font-family: "roboto-regular";
+  justify-content: center;
+  align-items: center;
+}
+
+.post a {
+  text-decoration: none;
+  width: 100%;
+  height: 30px;
+  background-color: var(--white);
+  text-align: center;
+  vertical-align: center;
+  border: solid 1px;
+  transition: all 0.3s linear;
+}
+
+.post a:hover {
+  background-color: var(--light-blue);
+}
+
+.post h2 {
+  font-family: "roboto-bold";
+  font-size: 3rem;
+}
+
+.post h4 {
+  font-family: "roboto-light";
+  color: grey;
+}
+
+.post h3 {
+  font-family: "roboto-regular";
+  font-size: 1.5rem;
+}
+
+.new-post {
+  font-family: "roboto-bold";
+  margin-bottom: 1rem;
+}
+
+.article-form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1rem;
+  font-family: "roboto-bold";
+}
